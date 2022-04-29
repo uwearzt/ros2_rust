@@ -31,8 +31,7 @@ jobs:
             docker_image:
             ros_distro: rolling
     runs-on: ${{ matrix.os }}
-    container:
-      image: ${{ matrix.docker_image }}
+    container: ${{ matrix.docker_image }}
     steps:
     - uses: actions/checkout@v2
 
