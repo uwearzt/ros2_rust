@@ -71,7 +71,7 @@ pub struct Node {
     pub(crate) guard_conditions: Vec<Weak<GuardCondition>>,
     pub(crate) services: Vec<Weak<dyn ServiceBase>>,
     pub(crate) subscriptions: Vec<Weak<dyn SubscriptionBase>>,
-    _parameter_map: ParameterOverrideMap,
+    pub(crate) _parameter_map: ParameterOverrideMap,
 }
 
 impl Eq for Node {}

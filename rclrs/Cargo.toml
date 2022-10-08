@@ -14,6 +14,8 @@ path = "src/lib.rs"
 # Please keep the list of dependencies alphabetically sorted,
 # and also state why each dependency is needed.
 [dependencies]
+# Needed for parameter services
+rcl_interfaces = "*"
 # Needed for the Message trait, among others
 rosidl_runtime_rs = "0.3"
 # Needed for clients
